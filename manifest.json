@@ -1,0 +1,16 @@
+{
+  "name": "Train Status PWA",
+  "short_name": "Train PWA",
+  "description": "Check the status of a train using PNR number",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4285f4",
+  "icons" :[
+    {
+        "src" : "rail.png",
+        "sizes": "512x512",
+        "type" : "image/png"
+    }
+]
+}

@@ -1,0 +1,144 @@
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 635px
+}
+
+h1 {
+  color: #009578;
+}
+
+.search-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-input-container {
+  position: relative;
+  padding: 2px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-history-list {
+  list-style-type: none;
+  font-size: small;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1;
+}
+
+.search-history-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.location{
+  border: 1px solid #009578 ;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#searchHistoryList {
+  margin-bottom: 10px;
+  height: 69px;
+  overflow: scroll;
+  border-bottom: 1px solid #ddd;
+  /* overflow-x: hidden; */
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#btncheck {
+  padding: 15px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #009578;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 87px;
+}
+
+.result-container {
+  margin-top: 20px;
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for the result container */
+.result-container {
+  margin-top: 20px;
+}
+
+.result-container h2 {
+  color: #009578;
+}
+
+.result-container p {
+  margin: 10px 0;
+}
+
+.result-container i {
+  margin-right: 10px;
+  color: #009578;
+}
+
+.result-container .location {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 5px;
+  }
+
+  .search-container {
+    max-width: 100%;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  #btncheck {
+    padding: 10px;
+    margin-top: 76px;
+  }
+
+  .result-containerresult {
+    padding: 10px;
+  }
+}
