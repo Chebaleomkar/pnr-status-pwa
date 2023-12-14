@@ -21,7 +21,7 @@ self.addEventListener('fetch', (e) => {
             .then(res => {
                 return res || fetch(e.request);
             })
-            .catch(err =>{
+            .catch(err => {
                 console.log(err)
             })
     );
