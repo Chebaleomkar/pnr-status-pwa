@@ -13,20 +13,24 @@ if ('serviceWorker' in navigator) {
 var searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
 
 function updateSearchHistory(pnrInput) {
-    // Add current search to the history
-    searchHistory.push(pnrInput);
+    // Check if the PNR is already in the history
+    if (!searchHistory.includes(pnrInput)) {
+        // Add current search to the history
+        searchHistory.push(pnrInput);
 
-    // Keep only the most recent 10 searches
-    if (searchHistory.length > 10) {
-        searchHistory = searchHistory.slice(-10);
+        // Keep only the most recent 10 searches
+        if (searchHistory.length > 10) {
+            searchHistory = searchHistory.slice(-10);
+        }
+
+        // Save the updated search history to localStorage
+        localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+
+        // Optionally, you can display the search history in the console
+        console.log("Search History:", searchHistory);
     }
-
-    // Save the updated search history to localStorage
-    localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
-
-    // Optionally, you can display the search history in the console
-    console.log("Search History:", searchHistory);
 }
+
 
 function updateSearchHistoryUI() {
     // Display the search history in the UI
@@ -83,7 +87,7 @@ async function checkStatus() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'fe2f26c906msh336fdf1b2d865e1p1b3814jsn02a4de671e51',
+            'X-RapidAPI-Key': '233db66299msh85866fb939d40e9p141312jsneded6ff6943b',
             'X-RapidAPI-Host': 'pnr-status-indian-railway.p.rapidapi.com'
         }
     };
