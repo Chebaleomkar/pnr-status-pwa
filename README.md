@@ -5,7 +5,8 @@
  Users can access essential details about their train journey, including train information, departure time, route, and journey date.
  This PWA aims to deliver a seamless and efficient experience for checking PNR status.
 
- ![Alt text](<PNR STATUS APP.jpg>)
+![PNR STATUS APP](https://github.com/Chebaleomkar/pnr-status-pwa/assets/122032936/e6fb29ad-0f7c-4a8f-a6a8-007dc33b9746)
+
 
 ##Key Features:
  1.Real-time PNR Status: Get instant updates on the status of your Passenger Name Record.
